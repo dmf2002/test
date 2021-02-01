@@ -8,8 +8,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public static final String CREATE_THING="create table book("
             +"years String,"
             +"monthday String,"
-            +"title text,"
-            +"desc1 text,"
+            +"title String,"
+            +"desc1 String,"
             +"type String)";
     private Context mContext;
     public MyDatabaseHelper(Context context,String name,SQLiteDatabase.CursorFactory factory,int version ) {
