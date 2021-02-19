@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
 public class MyDatabaseHelper extends SQLiteOpenHelper {
-    public static final String CREATE_THING="create table book("
+    public static final String CREATE_THING="create table Event("
             +"years String,"
             +"monthday String,"
             +"title String,"
@@ -19,7 +19,6 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_THING);
-        Toast.makeText(mContext,"Create suceeded",Toast.LENGTH_SHORT).show();
     }
 
     @Override
